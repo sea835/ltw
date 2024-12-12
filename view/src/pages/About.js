@@ -7,19 +7,19 @@ const About = () => {
       <Header />
       <main className="flex-1 bg-gray-50">
         <div className="container mx-auto px-4 py-16">
-          <h1 className="text-5xl font-bold text-center text-gray-800 mb-12">
+          <h1 className="text-5xl font-bold text-center text-gray-800 mb-12 animate-fade-in">
             Về Chúng Tôi
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20">
-            <div className="relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20 hover:transform hover:scale-[1.02] transition-all duration-300">
+            <div className="relative group">
               <img
-                src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.6435-9/123641550_5290217277670373_8989783154082641879_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeEveIhjePy7PLNF8ZBsRCFwYkAyxRr6XiViQDLFGvpeJbnQiTVi9BokmYecXmohJ_I2saP_NEQ6D5P0H-_PRFSc&_nc_ohc=HERGcYvJ0oEQ7kNvgEKGa-L&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AVUqz_M2Bp-TSNFGpoP3nyO&oh=00_AYAeGwdbDVPyGT4bPGbb0FJBenKVwIor16Y5XtA4LsWzBQ&oe=6742E17A"
+                src="https://saotruchoanganh.com/wp-content/uploads/2018/10/44247811_10155634689921671_8893516151930224640_n-770x350.jpg.webp"
                 alt="Xưởng sản xuất sáo"
-                className="rounded-lg shadow-2xl"
+                className="rounded-2xl shadow-2xl transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-4 rounded-lg shadow-lg">
-                <p className="font-semibold">Thành lập từ 2010</p>
+              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 rounded-2xl shadow-xl transform transition-all duration-300 group-hover:scale-105">
+                <p className="font-semibold text-lg">Thành lập từ 2010</p>
               </div>
             </div>
             <div>
@@ -40,12 +40,12 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-xl p-10 mb-20">
+          <div className="bg-white rounded-2xl shadow-xl p-12 mb-20 hover:shadow-2xl transition-shadow duration-300">
             <h2 className="text-3xl font-semibold text-gray-800 mb-10 text-center">
               Giá Trị Cốt Lõi
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <div className="text-center bg-gray-50 p-6 rounded-lg transition-all duration-300 hover:shadow-lg">
+              <div className="text-center bg-gradient-to-b from-gray-50 to-white p-8 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                 <div className="bg-blue-500 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="text-center bg-blue-50 p-10 rounded-xl shadow-lg">
+          <div className="text-center bg-gradient-to-br from-blue-50 via-white to-blue-50 p-12 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
             <h2 className="text-3xl font-semibold text-gray-800 mb-6">
               Hãy Đến Với Chúng Tôi
             </h2>
@@ -123,7 +123,7 @@ const About = () => {
               nghiệm các sản phẩm sáo của chúng tôi. Hãy đến và cảm nhận âm nhạc
               cùng Sáo Việt!
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+            <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-8 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-lg hover:shadow-xl">
               Đặt Lịch Tham Quan
             </button>
           </div>

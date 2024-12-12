@@ -32,7 +32,7 @@ const Header = () => {
       {/* Spacer div để giữ layout không bị jump khi header fixed */}
       <div className="h-[80px] w-full"></div>
 
-      <header className="fixed top-0 left-0 right-0 flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide z-50">
+      <header className="fixed top-0 left-0 right-0 flex bg-white/95 backdrop-blur-sm border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide z-50 shadow-sm">
         <div className="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
           <NavLink to="/">
             <img src="/logo.png" alt="logo" className="h-[40px]" />
@@ -63,7 +63,7 @@ const Header = () => {
               </svg>
             </button>
 
-            <ul className="lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+            <ul className="lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-3/4 max-lg:min-w-[250px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
               <li className="mb-6 hidden max-lg:block">
                 <NavLink to="/">
                   <img
@@ -78,8 +78,8 @@ const Header = () => {
                   to="/"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-[#007bff] hover:text-[#007bff] text-[15px] block font-semibold"
-                      : "text-[#333] hover:text-[#007bff] text-[15px] block font-semibold"
+                      ? "text-blue-600 hover:text-blue-700 text-[15px] block font-semibold transition-colors duration-200"
+                      : "text-gray-700 hover:text-blue-600 text-[15px] block font-semibold transition-colors duration-200"
                   }
                 >
                   Trang chủ
@@ -90,8 +90,8 @@ const Header = () => {
                   to="/shop"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-[#007bff] hover:text-[#007bff] text-[15px] block font-semibold"
-                      : "text-[#333] hover:text-[#007bff] text-[15px] block font-semibold"
+                      ? "text-blue-600 hover:text-blue-700 text-[15px] block font-semibold transition-colors duration-200"
+                      : "text-gray-700 hover:text-blue-600 text-[15px] block font-semibold transition-colors duration-200"
                   }
                 >
                   Sản phẩm
@@ -102,8 +102,8 @@ const Header = () => {
                   to="/about"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-[#007bff] hover:text-[#007bff] text-[15px] block font-semibold"
-                      : "text-[#333] hover:text-[#007bff] text-[15px] block font-semibold"
+                      ? "text-blue-600 hover:text-blue-700 text-[15px] block font-semibold transition-colors duration-200"
+                      : "text-gray-700 hover:text-blue-600 text-[15px] block font-semibold transition-colors duration-200"
                   }
                 >
                   Thông tin
@@ -114,8 +114,8 @@ const Header = () => {
                   to="/contact"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-[#007bff] hover:text-[#007bff] text-[15px] block font-semibold"
-                      : "text-[#333] hover:text-[#007bff] text-[15px] block font-semibold"
+                      ? "text-blue-600 hover:text-blue-700 text-[15px] block font-semibold transition-colors duration-200"
+                      : "text-gray-700 hover:text-blue-600 text-[15px] block font-semibold transition-colors duration-200"
                   }
                 >
                   Liên hệ
@@ -151,13 +151,13 @@ const Header = () => {
               {!auth.isAuthenticated ? (
                 <>
                   <button
-                    className="ml-3 px-5 py-2 text-sm rounded-full text-white border-2 border-[#007bff] bg-[#007bff] hover:bg-[#004bff]"
+                    className="ml-3 px-6 py-2.5 text-sm rounded-lg text-white border-2 border-blue-600 bg-blue-600 hover:bg-blue-700 transition-all duration-200 ease-in-out transform hover:scale-105"
                     onClick={() => navigate("/register")}
                   >
                     Đăng kí
                   </button>
                   <button
-                    className="ml-3 px-5 py-2 text-sm rounded-full text-white border-2 border-[#007bff] bg-[#007bff] hover:bg-[#004bff]"
+                    className="ml-3 px-6 py-2.5 text-sm rounded-lg text-white border-2 border-blue-600 bg-blue-600 hover:bg-blue-700 transition-all duration-200 ease-in-out transform hover:scale-105"
                     onClick={() => navigate("/login")}
                   >
                     Đăng nhập

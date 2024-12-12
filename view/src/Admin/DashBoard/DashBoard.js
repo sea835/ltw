@@ -72,7 +72,7 @@ const DashBoard = (props) => {
 
     return (
         <div className="flex flex-wrap justify-center gap-4">
-            <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
+            <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="min-h-[256px]">
                     <img src="https://readymadeui.com/Imagination.webp" className="w-full" />
                 </div>
@@ -100,7 +100,7 @@ const DashBoard = (props) => {
                 </div>
             </div>
 
-            <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
+            <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="min-h-[256px]">
                     <img src="https://readymadeui.com/Imagination.webp" className="w-full" />
                 </div>
@@ -135,7 +135,7 @@ const DashBoard = (props) => {
                 </div>
             </div>
 
-            <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
+            <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="min-h-[256px]">
                     <img src="https://readymadeui.com/Imagination.webp" className="w-full" />
                 </div>
@@ -177,7 +177,7 @@ const DashBoard = (props) => {
                 </div>
             </div>
 
-            <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
+            <div className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="min-h-[256px]">
                     <img src="https://readymadeui.com/Imagination.webp" className="w-full" />
                 </div>

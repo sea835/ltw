@@ -14,7 +14,7 @@ const Home = () => {
       <Header />
       <div className="banner">
         <div className="relative">
-          <div className="absolute inset-0 bg-black/100" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-70" />
 
           <img
             src="https://down-vn.img.susercontent.com/file/22bd054b3eef24a5f5e7c08de6aeaf30.webp"
@@ -23,15 +23,15 @@ const Home = () => {
           />
 
           <div className="relative min-h-[350px] flex flex-col items-center justify-center p-6 text-white">
-            <h2 className="text-5xl font-extrabold mb-6 text-white-300 drop-shadow-[0_5px_5px_rgba(0,0,0,1)] hover:scale-105 transition-transform duration-300">
+            <h2 className="text-3xl sm:text-5xl font-extrabold mb-6 text-white-300 drop-shadow-[0_5px_5px_rgba(0,0,0,1)] hover:scale-105 transition-transform duration-300">
               Sáo Trúc Chính Hãng
             </h2>
-            <p className="text-xl text-gray-100 drop-shadow-[0_5px_5px_rgba(0,0,0,1)] tracking-wide max-w-xl text-center font-bold">
+            <p className="text-lg sm:text-xl text-gray-100 drop-shadow-[0_5px_5px_rgba(0,0,0,1)] tracking-wide max-w-xl text-center font-bold">
               Khơi Dậy Đam Mê Âm Nhạc Với Những Cây Sáo Tuyệt Đẹp - Âm Thanh
               Tinh Tế, Phong Cách Độc Đáo!
             </p>
 
-            <button className="mt-8 px-6 py-3 border-2 border-solid border-white rounded-lg hover:bg-white hover:text-black font-bold" onClick={() => navigate("/shop")}>
+            <button className="mt-8 px-4 sm:px-6 py-2 sm:py-3 border-2 border-solid border-white rounded-lg hover:bg-white hover:text-black font-bold transition-transform transform hover:scale-110" onClick={() => navigate("/shop")}>
               Xem ngay
             </button>
           </div>
